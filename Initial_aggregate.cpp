@@ -171,7 +171,7 @@ int main(int argc, char* argv[]) {
     std::ofstream mass("Results/Mass_Fixed_tstep_small_NSC.txt");
 
     // Simulation loop setup
-    double timestep = 0.5;
+    double timestep = 0.1;
     // If photos are wanted
     double screenshot_interval = 3600.0; // Every 3600 simulation seconds
     double next_screenshot_time = 0.0;
