@@ -142,7 +142,7 @@ for i = 1:numel(division)
     A.stress = (0.5 .* A_all_times{1}.gravity / max(A_all_times{1}.gravity,[],'all') + +0.5 .* A_all_times{1}.forces/max(A_all_times{1}.forces,[],'all')) .* A.distance_min;
     G.stress = graph(A.stress);
     tic
-    [edgeCounts_structure{i},vec1]= simulate_edge_breaks1(G.stress, 500,A.stress);
+    [edgeCounts_structure{i},vec1]= simulate_edge_breaks1(G.stress, 1000,A.stress);
     time_parallel(i) = toc;
 end
 %%
